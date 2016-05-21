@@ -1,0 +1,43 @@
+#!/bin/bash
+__dir__="$(cd $(dirname "${BASH_SOURCE[0]}"); pwd)"
+
+link_files() {
+  local root=$1;
+  local destination=$HOME;
+
+  if [ ! -d "$root/symlinks" ]; then
+    return 1
+  fi
+
+  for file in $(find $root/symlinks -type f -maxdepth 2); do
+    dotfile=${file/$root\/symlinks\//.}
+    echo "🔗  Linking '$dotfile'..."
+
+    mkdir -p $(dirname "$destination/$dotfile")
+    ln -sf $file "$destination/$dotfile"
+  done
+}
+
+inject_init() {
+  local init="$__dir__/init.sh"
+  local profile="$HOME/.profile"
+
+  touch $profile
+
+  if ! grep -q "peagha/dotfiles" $profile; then
+    echo "👉 Loading 'init.sh' on  your '~/.profile'..."
+    echo -e "# Added by peagha/dotfiles\ntest -f $init && source $init\n" >> $profile
+  fi
+}
+
+create_directories() {
+  mkdir -p $HOME/src/{me,oss,work,heroku}
+  echo "👉 Creating directories on '~/src'..."
+}
+
+link_files $__dir__
+# link_files "$HOME/Dropbox"
+inject_init
+create_directories
+
+echo "🎉  Done!"
