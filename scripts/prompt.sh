@@ -1,8 +1,8 @@
 function git_mail_identifier() {
   local work=$(git config user.email | grep plataformatec)
   if [[ -z $work ]]; then
-    # :zap:
-    echo -n '⚡'
+    # :house:
+    echo -n '🏠'
   else
     # :office:
     echo -n '🏢'
