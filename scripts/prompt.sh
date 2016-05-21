@@ -9,6 +9,14 @@ function git_mail_identifier() {
   fi
 }
 
+function git_branch() {
+   echo -n $(__git_ps1)
+}
+
+function current_ruby() {
+  echo -n $(rbenv version-name)
+}
+
 function set_ps1() {
   # Non printable chars must be surrounded by \[\]
   # otherwise the console won't be able to calculate the line width
@@ -17,10 +25,7 @@ function set_ps1() {
   local beige="\[\e[1;33m\]"
   local reset="\[\e[00m\]"
 
-  local git_branch=$(__git_ps1)
-  local current_ruby=$(rbenv version-name)
-
-  export PS1="\`git_mail_identifier\`  \W | ${red}${current_ruby} ${beige}${git_branch} ${reset}$ "
+  export PS1="\`git_mail_identifier\`  \W | ${red}\`current_ruby\` ${beige}\`git_branch\` ${reset}$ "
 }
 
 set_ps1
