@@ -29,7 +29,9 @@ Prompt has format `<git email> <folder> | <ruby version> (<git branch>) $` where
 * `ruby version`: Current rbenv Ruby version;
 * `git branch`: Current git branch. Omitted if current folder isn't a git repo.
 
-## README todo:
-- [ ] add instructions for creating your own version of the dotfiles
+## README todo
+* [ ] add instructions for creating your own version of the dotfiles;
+* [ ] make init.sh idempotent.
+  * CDPATH has duplicated entries after a reload.
 
 Modified version of https://github.com/lucasmazza/dotfiles
