@@ -31,12 +31,11 @@ inject_init() {
 }
 
 create_directories() {
-  mkdir -p $HOME/src/{me,oss,work,heroku}
-  echo "👉 Creating directories on '~/src'..."
+  mkdir -p $HOME/Code/{me,oss,work}
+  echo "👉 Creating directories on '~/Code'..."
 }
 
 link_files $__dir__
-# link_files "$HOME/Dropbox"
 inject_init
 create_directories
 

@@ -1,26 +1,17 @@
-test -f /opt/boxen/env.sh && source /opt/boxen/env.sh
-# eval "$(hub alias -s)"
+eval "$(rbenv init -)"
 
-root="$(cd $(dirname "${BASH_SOURCE[0]}"); pwd)"
-
+# Enable bash_completion
 completion="$(brew --prefix)/etc/bash_completion"
 if [ -f $completion ]; then
   . $completion
 fi
 
-for path in $HOME/src/*; do
+# Add ~/Code/ folders cd shortcut
+for path in $HOME/Code/{me,oss,work,}; do
   export CDPATH="$CDPATH:$path"
 done
 
-for path in $HOME/src/private/*; do
-  export CDPATH="$CDPATH:$path"
-done
-
-
-export PATH="$HOME/bin:$root/bin:$PATH"
-# export EDITOR="atom -w -n"
-# export ATOM_REPOS_HOME="$HOME/code/github"
-
-test -f ~/.secrets.sh && source ~/.secrets.sh
+# Load scripts
+root="$(cd $(dirname "${BASH_SOURCE[0]}"); pwd)"
 source $root/scripts/prompt.sh
-# source $root/scripts/aliases.sh
+source $root/scripts/aliases.sh
