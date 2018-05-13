@@ -23,15 +23,15 @@ The [`init.sh`](init.sh) script will:
 ## Prompt customization
 Adds info to your prompt; example: `🏠 dotfiles | 2.4.2 (master) $`
 
-Prompt has format `<git email> <folder> | <ruby version> (<git branch>) $` where:
+Prompt has the format `<git email> <folder> | <ruby version> (<git branch>) $` where:
 * `git email`: An emoji shows if you are using your work (🏢) or personal (🏠) email on git commits;
 * `folder`: Current folder;
 * `ruby version`: Current rbenv Ruby version;
 * `git branch`: Current git branch. Omitted if current folder isn't a git repo.
 
 ## README todo
-* [ ] add instructions for creating your own version of the dotfiles;
-* [ ] make init.sh idempotent.
+* [ ] Add instructions for creating your own version of the dotfiles;
+* [ ] Make init.sh idempotent.
   * CDPATH has duplicated entries after a reload.
 
-Modified version of https://github.com/lucasmazza/dotfiles
+Forked version of https://github.com/lucasmazza/dotfiles
