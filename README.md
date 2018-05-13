@@ -7,6 +7,7 @@ git clone git@github.com:peagha/dotfiles.git ~/Code/dotfiles
 cd ~/Code/dotfiles
 ./install
 ```
+**Warning:** the current version uses my [gitconfig](symlinks/gitconfig) and some scripts have hardcoded strings ([prompt.sh](scripts/prompt.sh) checks for a plataformatec email).
 
 The [`install`](install) script will:
 
