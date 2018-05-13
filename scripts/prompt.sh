@@ -25,7 +25,7 @@ function set_ps1() {
   local beige="\[\e[1;33m\]"
   local reset="\[\e[00m\]"
 
-  export PS1="\`git_mail_identifier\`  \W | ${red}\`current_ruby\` ${beige}\`git_branch\` ${reset}$ "
+  export PS1="\`git_mail_identifier\` \W | ${red}\`current_ruby\` ${beige}\`git_branch\` ${reset}$ "
 }
 
 set_ps1
