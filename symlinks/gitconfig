@@ -1,5 +1,11 @@
+[pull]
+  rebase = true
 [push]
   default = simple
+[merge]
+  ff = false
+[rebase]
+  autosquash = true
 [credential]
   helper = osxkeychain
 [user]
