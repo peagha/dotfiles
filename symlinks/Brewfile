@@ -47,7 +47,7 @@ cask 'spotify'
 cask 'steam'
 
 tap 'caskroom/drivers'
-cask 'xbox360-controller-driver'
+cask 'xbox360-controller-driver-unofficial'
 
 tap 'caskroom/fonts'
 cask 'font-inconsolata'
