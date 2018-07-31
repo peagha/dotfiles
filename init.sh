@@ -11,6 +11,10 @@ for path in $HOME/Code/{me,oss,work,}; do
   export CDPATH="$CDPATH:$path"
 done
 
+# Add project-specific binstubs to PATH (rbenv)
+# https://github.com/rbenv/rbenv/wiki/Understanding-binstubs#adding-project-specific-binstubs-to-path
+export PATH="./bin:$PATH"
+
 # Load scripts
 root="$(cd $(dirname "${BASH_SOURCE[0]}"); pwd)"
 source $root/scripts/prompt.sh
