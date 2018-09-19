@@ -7,6 +7,7 @@ brew 'git'
 brew 'rbenv'
 brew 'tree'
 cask 'gitup'
+cask 'licecap'
 
 cask 'firefox'
 cask 'google-chrome'
