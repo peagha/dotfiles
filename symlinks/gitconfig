@@ -8,12 +8,6 @@
   autosquash = true
 [credential]
   helper = osxkeychain
-[user]
-  name = Philippe Hardardt
-  email = phil.henri@gmail.com
-  signingkey = 26C0796481783809
-[commit]
-  gpgsign = true
 [alias]
   lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
   tago = tag --sort=committerdate
@@ -26,3 +20,6 @@
   current-branch = rev-parse --abbrev-ref HEAD
   diff-origin = "!sh -c 'git diff origin/$(git current-branch)'"
   push-and-set-upstream = "!git push -u origin $(git current-branch)"
+[include]
+  # configs that are different in each machine
+  path = .gitconfig_local
