@@ -24,6 +24,7 @@ cask 'flux'
 cask 'gpg-suite'
 cask 'grammarly'
 cask 'itsycal'
+cask 'michaelvillar-timer'
 cask 'rescuetime'
 cask 'spectacle'
 cask 'the-unarchiver'
@@ -35,6 +36,7 @@ brew 'ffmpeg'
 brew 'mas'
 mas 'Shush', id: 496437906
 mas 'Keynote', id: 409183694
+mas 'Be Focused Pro', id: 961632517
 
 cask 'discord'
 cask 'skype'
