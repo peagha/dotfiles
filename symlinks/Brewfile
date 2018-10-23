@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # specify a directory to install
 cask_args appdir: '/Applications'
 
@@ -7,6 +9,7 @@ brew 'git'
 brew 'hub'
 brew 'rbenv'
 brew 'tree'
+brew 'q'
 cask 'gitup'
 cask 'licecap'
 
