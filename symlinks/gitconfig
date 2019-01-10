@@ -24,3 +24,5 @@
 [include]
   # configs that are different in each machine
   path = .gitconfig_local
+[core]
+	excludesfile = ~/.gitignore
