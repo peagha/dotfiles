@@ -64,5 +64,5 @@ cask 'font-hack'
 cask 'font-m-plus'
 cask 'font-ubuntu'
 cask 'font-hermit'
-
+cask 'font-victor-mono'
 cask 'aerial'
