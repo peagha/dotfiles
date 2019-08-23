@@ -28,4 +28,8 @@ function set_ps1() {
   export PS1="\`git_mail_identifier\` \W | ${red}\`current_ruby\` ${beige}\`git_branch\` ${reset}$ "
 }
 
+function title() {
+  echo -ne "\033]0;"$*"\007"
+}
+
 set_ps1
