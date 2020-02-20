@@ -29,3 +29,5 @@
 	excludesfile = ~/.gitignore
 [fetch]
 	prune = true
+[commit]
+	gpgsign = true
