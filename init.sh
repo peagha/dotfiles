@@ -19,3 +19,6 @@ export PATH="./bin:$PATH"
 root="$(cd $(dirname "${BASH_SOURCE[0]}"); pwd)"
 source $root/scripts/prompt.sh
 source $root/scripts/aliases.sh
+
+# Remove zsh warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
