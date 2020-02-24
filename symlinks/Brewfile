@@ -41,6 +41,7 @@ mas 'Shush', id: 496437906
 mas 'Keynote', id: 409183694
 mas 'Be Focused Pro', id: 961632517
 mas 'Unsplash', id: 1284863847
+mas 'Open In Webmail', id: 1451552749
 
 cask 'discord'
 cask 'slack'
