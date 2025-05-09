@@ -3,19 +3,17 @@
 # specify a directory to install
 cask_args appdir: '/Applications'
 
-brew 'bash'
-brew 'bash-completion'
 brew 'git'
 brew 'hub'
 brew 'rbenv'
 brew 'tree'
 brew 'q'
 cask 'gitup'
-cask 'licecap'
 
 cask 'firefox'
 cask 'google-chrome'
 
+cask 'obsidian'
 cask '1password'
 cask 'authy'
 cask 'calibre'
@@ -23,44 +21,38 @@ cask 'coconutbattery'
 cask 'daisydisk'
 cask 'dropbox'
 cask 'flux'
-cask 'gpg-suite'
-cask 'grammarly'
 cask 'itsycal'
 cask 'michaelvillar-timer'
-cask 'rescuetime'
+cask 'monitorcontrol'
 cask 'spectacle'
-cask 'the-unarchiver'
+# cask 'the-unarchiver'
 cask 'transmission'
-cask 'typora'
 cask 'vlc'
-cask 'tweetbot'
 brew 'ffmpeg'
+cask 'whatsapp'
+cask 'chatgpt'
 
 brew 'mas'
-mas 'Shush', id: 496437906
-mas 'Keynote', id: 409183694
-mas 'Be Focused Pro', id: 961632517
-mas 'Unsplash', id: 1284863847
-mas 'Open In Webmail', id: 1451552749
+# mas 'Be Focused Pro', id: 961632517
+# mas 'Unsplash', id: 1284863847
+# mas 'Open In Webmail', id: 1451552749
 
 cask 'discord'
 cask 'slack'
 
-cask 'alfred'
-cask 'dash'
+cask 'alfred@4'
+# cask 'dash'
 cask 'iterm2'
-cask 'postman'
-cask 'sublime-text'
+cask 'visual-studio-code'
 
 cask 'spotify'
 cask 'steam'
 
-tap 'homebrew/cask-fonts'
-cask 'font-inconsolata'
-cask 'font-fira-code'
-cask 'font-hack'
-cask 'font-m-plus'
-cask 'font-ubuntu'
-cask 'font-hermit'
-cask 'font-victor-mono'
-cask 'aerial'
+# cask 'font-inconsolata'
+# cask 'font-fira-code'
+# cask 'font-hack'
+# cask 'font-m-plus'
+# cask 'font-ubuntu'
+# cask 'font-hermit'
+# cask 'font-victor-mono'
+# cask 'aerial'
